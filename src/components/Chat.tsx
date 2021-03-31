@@ -1,9 +1,7 @@
-import React from 'react';
 import { ChatEngine } from 'react-chat-engine'
+import ChatFeed from './ChatFeed'
 
-
-
-export const Chat: React.FC = () => {
+const Chat: React.FC = () => {
 
     return (
         <div>
@@ -12,7 +10,10 @@ export const Chat: React.FC = () => {
                 projectID="faefd3ca-b618-4bb4-bea6-67fddd729d63"
                 userName="Admin"
                 userSecret="123456"
+                renderChatFeed={ (chatAppProps: any) => <ChatFeed { ...chatAppProps }/> } 
             />
         </div>
     )
 }
+
+export default Chat
