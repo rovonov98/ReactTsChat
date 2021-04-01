@@ -7,10 +7,11 @@ interface Props {
     activeChat: number,
     userName: string,
     messages: any,
+    creds: object
 }
 
  const ChatFeed: React.FC<Props> = (props) => {
-    const { chats, activeChat, userName, messages } = props
+    const { chats, activeChat, userName, messages, creds } = props
     const chat = chats && chats[activeChat]
     const renderMessages = () => {
         const keys = Object.keys(messages)
@@ -50,7 +51,7 @@ interface Props {
             { renderMessages() }
             <div style={{ height: '5rem' }}></div>
             <div className="message-form-wrapper">
-                <MessageForm { ...props } chatId={ activeChat }/>
+                <MessageForm { ...props } chatId={ activeChat } creds={ creds }/>
             </div>
         </div>
     )
