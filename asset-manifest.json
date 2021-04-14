@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactTsChat/static/css/main.fb2bb1d7.chunk.css",
+    "main.js": "/ReactTsChat/static/js/main.0ae505c9.chunk.js",
+    "main.js.map": "/ReactTsChat/static/js/main.0ae505c9.chunk.js.map",
+    "runtime-main.js": "/ReactTsChat/static/js/runtime-main.0ef030cd.js",
+    "runtime-main.js.map": "/ReactTsChat/static/js/runtime-main.0ef030cd.js.map",
+    "static/js/2.d3988675.chunk.js": "/ReactTsChat/static/js/2.d3988675.chunk.js",
+    "static/js/2.d3988675.chunk.js.map": "/ReactTsChat/static/js/2.d3988675.chunk.js.map",
+    "static/js/3.efb9a81e.chunk.js": "/ReactTsChat/static/js/3.efb9a81e.chunk.js",
+    "static/js/3.efb9a81e.chunk.js.map": "/ReactTsChat/static/js/3.efb9a81e.chunk.js.map",
+    "index.html": "/ReactTsChat/index.html",
+    "static/css/main.fb2bb1d7.chunk.css.map": "/ReactTsChat/static/css/main.fb2bb1d7.chunk.css.map",
+    "static/js/2.d3988675.chunk.js.LICENSE.txt": "/ReactTsChat/static/js/2.d3988675.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ef030cd.js",
+    "static/js/2.d3988675.chunk.js",
+    "static/css/main.fb2bb1d7.chunk.css",
+    "static/js/main.0ae505c9.chunk.js"
+  ]
+}
