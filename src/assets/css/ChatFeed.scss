@@ -1,0 +1,17 @@
+.messages-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.chat-feed {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.messages-wrapper {
+    overflow-y: scroll;
+}

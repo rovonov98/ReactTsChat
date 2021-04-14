@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { sendMessage, isTyping } from 'react-chat-engine'
+import '../assets/css/MessageForm.scss'
 
 interface Props {
     chatId: number,

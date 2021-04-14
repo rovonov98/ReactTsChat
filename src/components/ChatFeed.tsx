@@ -1,7 +1,8 @@
+import { useRef } from 'react'
 import MessageForm from './MessageForm'
 import MyMessage from './MyMessage'
 import NotMyMessage from './NotMyMessage'
-import '../App.css'
+import '../assets/css/ChatFeed.scss'
 
 interface Props {
     chats?: any,
@@ -11,9 +12,16 @@ interface Props {
     creds: object
 }
 
- const ChatFeed: React.FC<Props> = (props) => {
+const ChatFeed: React.FC<Props> = (props) => {
     const { chats, activeChat, userName, messages, creds } = props
     const chat = chats && chats[activeChat]
+    const messagesContainer = useRef<HTMLDivElement>(null)
+    const scrollDown = () => {
+        if (messagesContainer.current !== null && messagesContainer.current !== undefined) {
+            messagesContainer.current.scrollTop = messagesContainer.current.scrollHeight
+        }
+    }
+    scrollDown()
     const renderReadReceipts = (message: any, isMyMessage: boolean) => {
         return chat.people.map((person: any, index: number) => person.last_read === message.id && (
             <div
@@ -76,7 +84,7 @@ interface Props {
                     { chat.people.map((person: any) => `${ person.person.username }`) }
                 </div>
             </div>
-            <div className="messages-wrapper">
+            <div className="messages-wrapper" ref={ messagesContainer }>
                 { renderMessages() }
             </div>
             <div style={{ height: '5rem' }}></div>
