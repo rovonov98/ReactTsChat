@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import MessageForm from './MessageForm'
 import MyMessage from './MyMessage'
 import NotMyMessage from './NotMyMessage'
-import '../assets/css/ChatFeed.scss'
+import '../assets/scss/ChatFeed.scss'
 
 interface Props {
     chats?: any,
@@ -65,7 +65,8 @@ const ChatFeed: React.FC<Props> = (props) => {
                             marginRight: isMyMessage ? '1rem' : '0px', 
                             marginLeft: isMyMessage ? '0px' : '3rem',
                         }}
-                        > {  renderReadReceipts(message, isMyMessage) }
+                    > 
+                        {  renderReadReceipts(message, isMyMessage) }
                     </div>
                 </div>
             )
@@ -87,7 +88,6 @@ const ChatFeed: React.FC<Props> = (props) => {
             <div className="messages-wrapper" ref={ messagesContainer }>
                 { renderMessages() }
             </div>
-            <div style={{ height: '5rem' }}></div>
             <div className="message-form-wrapper">
                 <MessageForm { ...props } chatId={ activeChat } creds={ creds }/>
             </div>

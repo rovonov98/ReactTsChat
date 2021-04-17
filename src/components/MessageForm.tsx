@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { sendMessage, isTyping } from 'react-chat-engine'
-import '../assets/css/MessageForm.scss'
+import '../assets/scss/MessageForm.scss'
+import uploadSVG from '../assets/img/upload.svg'
 
 interface Props {
     chatId: number,
@@ -35,7 +36,8 @@ const MessageForm: React.FC<Props> = (props) => {
             />
             <label htmlFor="upload-button">
                 <span className="image-button"> 
-                    icon
+                <img className="svg-image" src={ uploadSVG } alt="w"/>
+                    {/* upload */}
                 </span>
             </label>
             <input 

@@ -1,3 +1,5 @@
+import '../assets/scss/Message.scss'
+
 interface Props {
     message: any,
     lastMessage: any
